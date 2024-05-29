@@ -1,3 +1,4 @@
+import { Colors } from 'constants/colors';
 import { forwardRef } from 'react';
 import { StyleSheet, Text, TouchableOpacity, TouchableOpacityProps } from 'react-native';
 
@@ -17,7 +18,7 @@ export const Button = forwardRef<TouchableOpacity, ButtonProps>(({ onPress, titl
 const styles = StyleSheet.create({
   button: {
     alignItems: 'center',
-    backgroundColor: '#6366F1',
+    backgroundColor: Colors.primary,
     borderRadius: 24,
     elevation: 5,
     flexDirection: 'row',
